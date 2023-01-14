@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Favicon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.jpg">
+     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.jpg">
+     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.jpg">
+
+    <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
+    
+<!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./carousel.css">
+    <title>Poolyt</title>
+</head>
+<style>
+    @media (max-width: 768px) {
+        .nav-links{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 55px; 
+            height: 100vh;
+            background-color: white;
+        }
+        #mobile-menu-2{
+            display: none;
+        }
+    }
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+    .hero__slide {
+  line-height: 100px;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  max-width: 540px;
+}
+
+    .glide__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(-50%);
+}
+.glide__slide {
+  line-height: 100px;
+  margin: 0;
+  text-align: center;
+  /* width: 100%;
+  max-width: 300px; */
+}
+</style>
+<body class="bg-[#F5F5F5">
+    <header class=" w-full">
+        <nav class="bg-white py-4 block items-center h-[72px] lg:py-7 lg:h-[120px]">
+            <div class="flex flex-wrap place-self-center items-center justify-between  w-full lg:max-w-screen-xl px-4 lg:px-4 mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="./images/Logo_main 1.png"
+                        class="h-[40px] w-[74.92px] lg:h-[63px] lg:w-[118px] mr-3 sm:h-9" alt="Landwind Logo" />
+                </a>
+                <div class="flex items-center lg:order-2 lg:hidden">
+                     <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 border-0 lg:hidden 100 focus:outline-none "
+                        aria-controls="mobile-menu-2" aria-expanded="false"
+                        id="openNav">
+                        <span class="sr-only">Open main menu</span>
+                        <img src="./images/drop.png" alt="" class="w-[18px] h-[18px]">
+                    </button>
+                </div>
+                <div class="nav-links items-center justify-between z-20 w-full lg:flex lg:justify-end lg:w-auto lg:order-1"
+                    id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 bg-white">
+                        <li class="navBlock">
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                                aria-current="page" data-toggle="collapse">Home</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="#aboutUs"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">About Us</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="#howItWorks"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">How it Works</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="#destination"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">Destination</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="#benefits"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">Benefits</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="#testimonials"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">Testimonials</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="faq.html"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">FAQ</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="#contact"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">Contact Us</a>
+                        </li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+      <!-- Start block -->
+      <section class="">
+        <div class="bg-[url('./images/banner.png')] bg-cover bg-no-repeat mx-auto lg:max-w-[1440px]">
+        <div class="max-w-screen-xl px-4 pt-[70px] pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+            <div class="text-white mr-auto place-self-center lg:col-span-7">
+                <p
+                    class="w-full lg:w-[491px] mb-[18px] text-[34px] font-bold leading-10 lg:text-[52px] lg:leading-[63px]">
+                    Going somewhere? <br> pool it!</p>
+                <p class="w-full lg:w-[438px] font-normal leading-6 text-xl mb-[18px] md:text-lg lg:leading-7 lg:text-2xl">
+                    Enjoy affordable, safe and sustainable trips on poolyt.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgViWJuqoXHh09h306zTMRgjR2V4is3zUYAau5bN1ienNiRw/viewform?usp=sf_link "
+                    class="bg-[#FDDA0E] inline-flex items-center justify-center w-full px-5 py-3 mb-10 mr-2  text-sm font-bold text-white  rounded-2xl sm:w-auto focus:outline-none ">
+                    Get Started</a>
+            </div>
+            <!-- <div class='mx-auto place-self-center w-full shadow-3xl  md:max-w-[438px] xl:w-[438px] lg:col-span-5 lg:mr-0 bg-white border rounded-[20px] p-4 lg:p-8'>
+                <p class="mb-6 font-medium text-base leading-[19px] lg:text-xl leading-6">Get nearby rides to your destination.</p>
+                <form class="w-full">
+                    <input class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[49px] lg:h-[52px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" id="username" type="text" placeholder="wabjay" />
+                    <input class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[49px] lg:h-[52px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" id="username" type="text" placeholder="wabjay" />
+                    <input class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[49px] lg:h-[52px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" id="username" type="text" placeholder="wabjay" />
+                    <input class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[49px] lg:h-[52px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" id="username" type="text" placeholder="wabjay" />
+                    <input class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[49px] lg:h-[52px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" id="username" type="text" placeholder="wabjay" />
+
+                    <a href="#" class="w-full inline-flex items-center justify-center w-full px-5 py-3 mt-8  bg-[#FDDA0E]  text-sm  text-white py-[18px] lg:mt-14 lg:py-[23px] px-2 rounded-[20px]" type="submit">
+                        Take a Trip
+                    </a>
+                  </form>                
+                  <!-- <iframe class="w-full h-[400px]" style="height: 400px;" src="https://docs.google.com/forms/d/e/1FAIpQLSf1nHZJX73E7zCEc3Buv-gRg11_X_fGS8b422zJKFH4SQKlNg/viewform?embedded=true">Loading…</iframe> -->
+                 </div> -->
+        </div>
+        </div>
+
+    </section>
+
+    <section class="">
+            <div class="bg-[url('./images/Aboutbg_sm.png')] bg-[length:260px] lg:bg-[url('./images/Aboutbg.png')] bg-no-repeat lg:bg-[length:630px] bg-left-top px-4 pt-[20px] lg:pt-[100px] lg:max-w-[1440px] mx-auto" id="aboutUs">
+                <div class="mx-auto px-4 max-w-screen-xl  mx-auto">
+                <div class='mr-0 ml-auto w-full mb-[40px] lg:mb-[100px] lg:w-6/12 xl:w-[657px]'>
+                <p class="mb-6 font-bold text-2xl leading-[29px] lg:text-4xl lg:leading-[44px]">About Us</p>
+                <p class="mb-6 font-normal text-sm leading-[19.63px] lg:text-[22px] lg:leading-[26.63px]">poolyt enables our community of verified and trusted drivers and riders (aka Poolytes) enjoy affordable and safe ride-sharing experience.</p>
+                <p class="mb-6 font-normal text-sm leading-[19.63px] lg:text-[22px] lg:leading-[26.63px]">Our mission is to make transportation sustainable and less polluting, with reduced traffic and parking congestions in cities we operate in.</p>
+                <p class="mb-6 font-normal text-sm leading-[19.63px] lg:text-[22px] lg:leading-[26.63px]">Rides on poolyt are safer than commercial buses and cheaper than ride-hailing. You can save up to 80% on transportation expenses and reduce your carbon footprint by driving on poolyt.</p>
+                </div>
+                
+                <div  id="howItWorks" class='w-full text-center mb-[40px] lg:mb-[100px] '>
+                    <p class="mb-6 font-bold text-2xl mb-3 leading-[29px] lg:text-4xl lg:leading-[44px]">How it Works</p>
+                    <p class="font-normal text-base leading-[19.63px] lg:text-[22px] lg:leading-[26.63px] mb-8 lg:mb-10 ">Our community of Poolytes frequently visit this destinations</p>
+                    <div class='grid md:grid-cols-3 gap-11'>
+                        <div class=' w-full  bg-white border border-[#FDDA0E] rounded-[10px] py-3 lg:py-6'>
+                            <p class="mb-6 text-[24px] lg:leading-[29px] font-semibold text-white pt-[5px] mx-auto w-10 h-10 rounded-full  bg-[#FDDA0E]">1</p>
+                            <img src="./images/schedule-outline.png" alt="" class="mx-auto mb-3 w-8 h-8  lg:mb-6 lg:w-[60px] lg:h-[60px]">
+                            <p class="mb-6 font-medium text-sm leading-[16.94px] lg:text-[20px] leading-6">Schedule Trip</p>
+                        </div>
+                        <div class=' w-full  bg-white border border-[#FE7405] rounded-[10px] py-3 lg:py-6'>
+                            <p class="mb-6 text-[24px] lg:leading-[29px] font-semibold text-white pt-[5px] mx-auto w-10 h-10 rounded-full  bg-[#FE7405]">2</p>
+                            <img src="./images/handshake.png" alt="" class="mx-auto mb-3 w-8 h-8  lg:mb-6 lg:w-[60px] lg:h-[60px]">
+                            <p class="mb-6 font-medium text-sm leading-[16.94px] lg:text-[20px] leading-6">Get Matched</p>
+                        </div>
+                        <div class=' w-full  bg-white border border-[#FDDA0E] rounded-[10px] py-3 lg:py-6'>
+                            <p class="mb-6 text-[24px] lg:leading-[29px] font-semibold text-white pt-[5px] mx-auto w-10 h-10 rounded-full  bg-[#FDDA0E]">3</p>
+                            <img src="./images/travel.png" alt="" class="mx-auto mb-3 w-8 h-8  lg:mb-6 lg:w-[60px] lg:h-[60px]">
+                            <p class="mb-6 font-medium text-sm leading-[16.94px] lg:text-[20px] leading-6">Bon Voyage</p>
+                        </div>
+                       
+                </div>
+                </div>
+
+                 <div class='w-full text-center' id="destination">
+                <p class="mb-6 font-bold text-2xl leading-[29px] lg:text-4xl lg:leading-[44px]">Destination</p>
+                <p class="font-normal text-base leading-[19.63px] lg:text-[22px] lg:leading-[26.63px] mb-8 lg:mb-10 ">Our community of Poolytes frequently visit this destinations</p>
+
+                <div class="flex justify-center items-center">
+                    <div class="glide xl:max-w-[1170px] mx-auto w-full py-8 rounded-3xl">
+                    <div class="glide__track " data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class=" mx-none glide__slide ">
+                          <img src="./images/card1.png" class="relative h-[150px] inline-flex  lg:h-[217px] rounded-3xl duration-300 ease-in-out">
+                          <p class="text-sm mt-3 lg:text-xl lg:mt-5 font-normal text-center">Victoria sland</p>
+                        </li>
+                        <li class="glide__slide">     
+                            <img src="./images/card1.png" class="relative h-[150px] inline-flex  lg:h-[217px] rounded-3xl duration-300 ease-in-out">
+                          <p class="text-sm mt-3 lg:text-xl lg:mt-5 font-normal text-center">Victoria sland</p>
+                        </li>
+                        <li class=" glide__slide">
+                            <img src="./images/card1.png" class="relative h-[150px] inline-flex  lg:h-[217px] rounded-3xl duration-300 ease-in-out">
+                          <p class="text-sm mt-3 lg:text-xl lg:mt-5 font-normal text-center">Victoria sland</p>
+                        </li>
+                        <li class=" glide__slide">
+                          <img src="./images/card1.png" class="relative h-[150px] inline-flex  lg:h-[217px] rounded-3xl duration-300 ease-in-out"> 
+                          <p class="text-sm mt-3 lg:text-xl lg:mt-5 font-normal text-center">Victoria sland</p>
+                        </li> 
+                        <li class=" glide__slide">
+                          <img src="./images/card1.png" class="relative h-[150px] inline-flex  lg:h-[217px] rounded-3xl duration-300 ease-in-out">
+                          <p class="text-sm mt-3 lg:text-xl lg:mt-5 font-normal text-center">Victoria sland</p>
+                        </li> 
+                      </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                      <button class="glide__arrow left-[-2rem] glide__arrow--left  absolute" data-glide-dir="<">
+                       <img src="./images/arrow-left.svg" class="w-6 h-6"  alt="">
+                      </button>
+                      <button class="glide__arrow  right-[-2rem] glide__arrow--right absolute" data-glide-dir=">">
+                        <img src="./images/arrow-right.svg" class="w-6 h-6"  alt="">
+
+                      </button>
+                    </div>
+                  </div>
+                  </div>
+                   
+                   <!-- <div class="bg-cover flex justify-center items-center" style="background-image: url('https://images.alphacoders.com/116/1169862.jpg')">
+                    <div class="glide xl:w-[62rem] lg:w-[42rem] md:w-[30rem] sm:w-[18rem] px-16 py-8 bg-gray-700 bg-opacity-60 rounded-3xl">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="w-auto glide__slide">
+                            <div class="relative flex flex-col text-center bg-gray-800 h-40 items-center justify-center rounded-3xl">
+                                <img src="./images/card1.png" class="relative h-[150px]  lg:h-[217px] rounded-3xl duration-300 ease-in-out">
+                              </div>
+                              <p class="text-sm mt-3 lg:text-xl lg:mt-5 font-normal text-center">Victoria sland</p>
+                        </li>
+                        <li class="w-auto glide__slide">     
+                            <div class="relative flex flex-col text-center bg-gray-800 h-40 items-center justify-center rounded-3xl">
+                                <img src="./images/card1.png" class="relative h-[150px]  lg:h-[217px] rounded-3xl duration-300 ease-in-out">
+                              </div>
+                              <p class="text-sm mt-3 lg:text-xl lg:mt-5 font-normal text-center">Victoria sland</p>
+                        </li>
+                        <li class="w-auto glide__slide">
+                            <div class="relative flex flex-col text-center bg-gray-800 h-40 items-center justify-center rounded-3xl">
+                                <img src="./images/card1.png" class="relative h-[150px]  lg:h-[217px] rounded-3xl duration-300 ease-in-out">
+                              </div>
+                              <p class="text-sm mt-3 lg:text-xl lg:mt-5 font-normal text-center">Victoria sland</p>
+                        </li>
+                        <li class="w-auto glide__slide">
+                            <div class="relative flex flex-col text-center bg-gray-800 h-40 items-center justify-center rounded-3xl">
+                                <img src="./images/card1.png" class="relative h-[150px]  lg:h-[217px] rounded-3xl duration-300 ease-in-out">
+                              </div>
+                              <p class="text-sm mt-3 lg:text-xl lg:mt-5 font-normal text-center">Victoria sland</p>
+                        <li class="w-auto glide__slide">
+                          <div class="relative flex flex-col text-center bg-gray-800 h-40 items-center justify-center rounded-3xl">
+                            <img src="./images/card1.png" class="relative h-[150px]  lg:h-[217px] rounded-3xl duration-300 ease-in-out">
+                          </div>
+                          <p class="text-sm mt-3 lg:text-xl lg:mt-5 font-normal text-center">Victoria sland</p>
+                        </li> 
+                      </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                      <button class="glide__arrow glide__arrow--left left-4" data-glide-dir="<">
+                        <div class="h-9 w-9 bg-gray-800 rounded-xl flex justify-center items-center my-auto hover:bg-red-200 duration-300 ease-in-out">
+                          <i class="fas fa-angle-left text-red-200 text-2xl"></i>
+                        </div>
+                      </button>
+                      <button class="glide__arrow glide__arrow--right right-4" data-glide-dir=">">
+                        <div class="h-9 w-9 bg-gray-800 rounded-xl flex justify-center items-center my-auto hover:bg-red-200 duration-300 ease-in-out">
+                          <i class="fas fa-angle-right text-red-200 text-2xl"></i>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  </div> -->
+                  
+            </div> 
+
+                
+                    <div class='w-full text-center mt-[113px] mb-[40px] lg:mb-[100px] lg:mt-[149px]' id="benefits">
+                        <p class="mb-6 font-bold text-2xl leading-[29px] lg:text-4xl lg:leading-[44px]">Benefits</p>
+                        <p class="font-normal text-base leading-[19.63px] lg:text-[22px] lg:leading-[26.63px] mb-8 lg:mb-10 ">Here are some benefits enjoyed by our community of Poolytes.</p>
+                        <div class="grid gap-2 md:grid-cols-3 md:gap-11">
+                            <div class='bg-[#FDDA0E] mx-auto rounded-[10px] px-8 py-3 lg:px-5 lg:py-6 lg:w-[295px]'>
+                                <p class="mb-2 text-white font-medium text-base leading-[16.94px] lg:text-[20px] leading-6">Bon Voyage</p>
+                                <p class="font-medium text-white text-left text-sm leading-[19.36px] ">Meet new people, make new friends. Your next big move might be facilitated by someone you shared a trip with.</p>
+                            </div>
+                            <div class="w-full bg-white bg-[url('./images/Intersect.png')] bg-right-top h-[472px] bg-no-repeat h-max mx-auto border shadow-drop rounded-[10px] py-3 lg:py-6 lg:w-[295px]"
+                            style="background-size: 32px;">
+                                <p class="mb-2  font-medium text-sm leading-[16.94px] lg:text-[20px] leading-6">Health</p>
+                               </div>
+                               <div class="w-full bg-white bg-[url('./images/Intersect-yellow.png')] bg-right-top h-[472px] bg-no-repeat h-max mx-auto border shadow-drop rounded-[10px] py-3 lg:py-6 lg:w-[295px]"
+                            style="background-size: 32px;">
+                                <p class="mb-2  font-medium text-sm leading-[16.94px] lg:text-[20px] leading-6">Savings</p>
+                               </div>
+                               <div class="w-full bg-white bg-[url('./images/Intersect.png')] bg-right-top h-[472px] bg-no-repeat h-max mx-auto border shadow-drop rounded-[10px] py-3 lg:py-6 lg:w-[295px]"
+                            style="background-size: 32px;">
+                                <p class="mb-2  font-medium text-sm leading-[16.94px] lg:text-[20px] leading-6">Climate</p>
+                               </div>
+                               <div class="w-full bg-white bg-[url('./images/Intersect-yellow.png')] bg-right-top h-[472px] bg-no-repeat h-max mx-auto border shadow-drop rounded-[10px] py-3 lg:py-6 lg:w-[295px]"
+                            style="background-size: 32px;">
+                                <p class="mb-2  font-medium text-sm leading-[16.94px] lg:text-[20px] leading-6">Speed</p>
+                               </div>
+                               <div class="w-full bg-white bg-[url('./images/Intersect.png')] bg-right-top h-[472px] bg-no-repeat h-max mx-auto border shadow-drop rounded-[10px] py-3 lg:py-6 lg:w-[295px]"
+                            style="background-size: 32px;">
+                                <p class="mb-2  font-medium text-sm leading-[16.94px] lg:text-[20px] leading-6">Parking</p>
+                               </div>
+                             
+                        </div>
+                    </div>
+
+                    <div class='w-full text-center mt-[113px] mb-[40px] lg:mb-[100px] lg:mt-[149px]' id="testimonials">
+                        <p class="mb-6 font-bold text-2xl leading-[29px] lg:text-4xl lg:leading-[44px]">Testimonials</p>
+                        <p class="font-normal text-base leading-[19.63px] lg:text-[22px] lg:leading-[26.63px] mb-8 lg:mb-10 ">Here are some benefits enjoyed by our community of Poolytes.</p>
+ 
+                        <div class="md:grid gap-2 md:grid-cols-2 md:gap-11 xl:grid-cols-[1fr,544px] md:justify-between w-full mx-auto">
+                                 
+
+                            <!-- <div class="text-center max-w-fit">
+                                <div class='rounded-[10px] bg-white border shadow-drop px-8 py-3 lg:px-5 lg:py-6 lg:w-[295px]'>
+                               <p class="mb-2 font-medium text-base leading-[16.94px] lg:text-[20px] leading-6">Bon Voyage</p>
+                               <p class="font-medium  text-left text-sm leading-[19.36px] w-[295px] ">Meet new people, make new friends. Your next big move might be facilitated by someone you shared a trip with.</p>
+                           </div>
+                           <a href=""
+                   class="bg-[#FDDA0E] inline-flex w-full items-center justify-center px-5 py-3 mb-10 mr-2  text-sm font-bold text-white  rounded-2xl sm:w-auto focus:outline-none ">
+                   Drive on poolyt</a>
+                           </div> -->
+                           <div class="carousel"></div>
+
+                            <div class="glide hero">
+                                <div class="glide__track" data-glide-el="track">
+                                  <ul class="whitespace-normal	 glide__slides">
+                                    <li class="hero__slide" id="1t">
+                                        <div class="text-center w-full">
+                                            <div class='rounded-[10px] box-border mx-auto bg-white border shadow-drop px-[3rem] py-[3rem]'>
+                                                <img src="./images/Emmanuel.jpg" class="w-[60px] h-[60px] lg:hidden rounded-full mx-auto mb-3  " alt="">
+                                                <img src="./images/format_start.png" class="w-8 h-8 rounded-full mb-3  lg:mb-[40px]" alt="">
+                                        
+                                                <p class="font-normal text-sm lg:text-xl  text-left text-sm leading-[16.94px] lg:leading-[24.2px] mx-auto">With poolyt, I am able to reduce my monthly fuelling cost and quarterly vehicle maintenance cost as I split the expense with riders.</p>
+                                        
+                                                <img src="./images/format_end.png" class="w-8 h-8 rounded-full mr-0 ml-auto mt-3 lg:mt-[40px]" alt="">
+                                        
+                                                <p class="mb-4 mt-6 font-medium text-base leading-[16.94px] lg:text-[20px] leading-6">Emmanuel</p>
+                                                <p class="mb-8 lg:mb-[40px] font-normal text-base leading-[16.94px] lg:text-[20px] leading-6">Drives on poolyt</p>
+
+                                            </div>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgViWJuqoXHh09h306zTMRgjR2V4is3zUYAau5bN1ienNiRw/viewform?usp=sf_link "
+                                                class="bg-[#FDDA0E] inline-flex w-full items-center justify-center px-5 py-3 mb-10 mr-2  text-sm font-bold text-white  rounded-2xl sm:w-auto focus:outline-none ">
+                                               Get Started</a>
+                                        </div>
+                                    </li>
+                                    <li class="hero__slide" id="2t">
+                                        <div class="text-center w-full">
+                                            <div class='rounded-[10px] box-border mx-auto bg-white border shadow-drop  px-[3rem] py-[3rem]'>
+                                                <img src="./images/Imoh.jpg" class="w-[60px] h-[60px] lg:hidden rounded-full mx-auto mb-3  " alt="">
+                                                <img src="./images/format_start.png" class="w-8 h-8 rounded-full mb-3  lg:mb-[40px]" alt="">
+                                        
+                                                <p class="font-normal text-sm lg:text-xl  text-left text-sm leading-[16.94px] lg:leading-[24.2px] mx-auto">With poolyt, I am able to reduce my monthly fuelling cost and quarterly vehicle maintenance cost as I split the expense with riders.</p>
+                                                <img src="./images/format_end.png" class="w-8 h-8 rounded-full mr-0 ml-auto mt-3 lg:mt-[40px]" alt="">
+                                        
+                                                <p class="mb-4 mt-6 font-medium text-base leading-[16.94px] lg:text-[20px] leading-6">Imoh</p>
+                                                <p class="mb-8 lg:mb-[40px] font-normal text-base leading-[16.94px] lg:text-[20px] leading-6">Rides on poolyt</p>
+
+                                            </div>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgViWJuqoXHh09h306zTMRgjR2V4is3zUYAau5bN1ienNiRw/viewform?usp=sf_link "
+                                                class="bg-[#FDDA0E] inline-flex w-full items-center justify-center px-5 py-3 mb-10 mr-2  text-sm font-bold text-white  rounded-2xl sm:w-auto focus:outline-none ">
+                                               Get Started</a>
+                                        </div>
+                                    </li>
+                                    <li class="hero__slide" id="3t">
+                                        <div class="text-center w-full">
+                                            <div class='rounded-[10px] box-border mx-auto bg-white border shadow-drop  px-[3rem] py-[3rem]'>
+                                                <img src="./images/Ruth.jpg" class="w-[60px] h-[60px] hidden rounded-full mx-auto mb-3  " alt="">
+                                                <img src="./images/format_start.png" class="w-8 h-8 rounded-full mb-3  lg:mb-[40px]" alt="">
+                                        
+                                                <p class="font-normal text-sm lg:text-xl  text-left text-sm leading-[16.94px] lg:leading-[24.2px] mx-auto">With poolyt, I am able to reduce my monthly fuelling cost and quarterly vehicle maintenance cost as I split the expense with riders.</p>
+                                                <img src="./images/format_end.png" class="w-8 h-8 rounded-full mr-0 ml-auto mt-3 lg:mt-[40px]" alt="">
+                                                
+                                                <p class="mb-4 mt-6 font-medium text-base leading-[16.94px] lg:text-[20px] leading-6">Ruth</p>
+                                                <p class="mb-8 lg:mb-[40px]font-normal text-base leading-[16.94px] lg:text-[20px] leading-6">Rides on poolyt</p>
+                                            </div>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgViWJuqoXHh09h306zTMRgjR2V4is3zUYAau5bN1ienNiRw/viewform?usp=sf_link "
+                                                class="bg-[#FDDA0E] inline-flex w-full items-center justify-center px-5 py-3 mb-10 mr-2  text-sm font-bold text-white  rounded-2xl sm:w-auto focus:outline-none ">
+                                               Get Started</a>
+                                        </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                      
+                           
+                            </div>
+                        </div>
+                 </div>
+        </div>
+        </div>
+    </section>
+    <!-- End block -->
+     <!-- Start block -->
+     <section class="bg-white dark:bg-gray-900">
+        <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 ">
+            <h2 class="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl dark:text-white">Frequently asked questions</h2>
+            <div class="max-w-screen-md mx-auto">
+                <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white text-gray-900" data-inactive-classes="text-grey-500 dark:text-gray-400">
+                    <h3 id="accordion-flush-heading-1">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1"  clip-rule="evenodd">
+                            <span>What is ridesharing?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Ridesharing occurs when there are more than one occupants in a private vehicle. Rather than travelling alone or with empty seats, drivers can connect with people travelling to same direction and share the travel cost on poolyt. These trips are made possible without the intention of making profit.</p>
+                           </div>
+                    </div>
+                    <h3 id="accordion-flush-heading-2">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                            <span>Do I need a car to rideshare?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">You don’t need to own a car to share a ride. You can find drivers who are happy to give you a lift in exchange for sharing the travel cost by <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgViWJuqoXHh09h306zTMRgjR2V4is3zUYAau5bN1ienNiRw/viewform?usp=sf_link">joining the poolyt community.</a></p>
+                        </div>
+                    </div>
+                    <h3 id="accordion-flush-heading-3">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                            <span>How safe is ridesharing?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">poolyt is built around safety and trust. While your location and destination is public, your contact information is only shared with members you have agreed to share a ride with.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">You however need to take responsibility for your personal safety while travelling. Below are some tips to keep you safe on the road:</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                                <li>Avoid exchanging home address with members you have not met in-person</li>
+                                <li>Arrange to join a ride from a public location</li>
+                                <li>Let your family and friend know your itinerary, including your rideshare partners</li>
+                                <li>Endeavor to verify IDs and vehicle details before boarding to be sure you are travelling with the right persons</li>
+                                <li>Never feel obligated to join a trip, especially when you have doubt about your travel rideshare partners.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>   
+            <div class="w-full text-center mt-8">
+                <a href="faq.html"
+            class="w-full inline-flex items-center  justify-center w-full mb-6 px-5  bg-[#FDDA0E]  text-sm  text-white py-[18px]  px-2 rounded-[20px] lg:w-[212px] focus:outline-none ">
+            Frequently Asked Questions</a>
+            </div>            
+            
+        </div>
+    </section>
+    <!-- End block -->
+
+  <!-- End block -->
+  <footer class="bg-white dark:bg-gray-800">
+    <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+        <div class="grid  gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div class=" md:order-first lg:max-w-fit">
+                <img src="./images/Logo_main 1.png" class="w-[87.27px] h-10 mb-6 lg:mb-8" alt="">
+                <ul class="">
+                    <li class="mb-4 lg:mb-6">
+                        <a mailto="info@poolyt.com" class="text-sm text-[#1A1A22] lg:text-lg font-medium hover:underline">info@poolyt.com</a>
+                    </li>
+                    <li class="mb-4 lg:mb-6">
+                        <a href="" class="text-sm text-[#1A1A22] lg:text-lg font-medium hover:underline">+2347036926299</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:order-3 lg:max-w-fit">
+                <h3 class="mb-8 lg:text-xl font-bold uppercase">Site map</h3>
+                <ul class="">
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">About Us</a>
+                    </li>
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">How it works</a>
+                    </li>
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">Destination</a>
+                    </li>
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">Benefits</a>
+                    </li>
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">Testimonials</a>
+                    </li>
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contact" class="md:order-last lg:max-w-[400px]">
+                <!-- <h3 class="mb-8 lg:text-xl font-bold uppercase">Request a call for you</h3> -->
+                <form class="w-full">
+                    <!-- <input class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[49px] lg:h-[52px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" id="username" type="text" placeholder="Name" />
+                    <input class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[49px] lg:h-[52px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" id="username" type="email" placeholder="Email" />
+                    <input class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[49px] lg:h-[52px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" id="username" type="tel" placeholder="Phone Number" />
+                    <textarea class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[150px] lg:h-[100px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" placeholder="Message"></textarea> -->
+                    
+                    <a href="https://wa.me/message/ZVDXUCRHIUKJN1 " class="w-full inline-flex items-center  justify-center w-full mb-6 px-5  bg-[#FDDA0E]  text-sm  text-white py-[18px]  px-2 rounded-[20px]" type="submit">
+                        Message poolyt on WhatsApp
+                    </a>
+                  </form>   
+            </div>
+            <div class="md:order-2 lg:max-w-fit">
+                <h3 class="hidden lg:block mb-8 lg:text-xl font-bold uppercase">Follow us on</h3>
+                <ul class="flex flex-row gap-x-4 w-max mx-auto">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline"><img src="./images/Facebook.svg" class="w-6 h-6 md:w-8 md:h-8 " alt=""></a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://www.twitter.com/justpoolyt" class="hover:underline"><img src="./images/Twitter.svg" class="w-6 h-6 md:w-8 md:h-8 " alt=""></a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://www.instagram.com/justpoolyt" class="hover:underline"><img src="./images/Instagram.svg" class="w-6 h-6 md:w-8 md:h-8 " alt=""></a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://www.linkedin.com/company/poolyt" class="hover:underline"><img src="./images/LinkedIn.svg" class="w-6 h-6 md:w-8 md:h-8 " alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+        <div class="text-center">
+            <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2022 All rights reserved.<a href="https://flowbite.com"
+                    class="text-[#575757] hover:underline">Poolyt</a>
+            </span>
+        </div>
+    </div>
+</footer>
+
+<!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
+<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+<script src="./script.js"></script>
+<script defer src="./carousel.js"></script>
+
+<script>
+  const config = {
+  type: 'carousel',
+  startAt: 1,
+  perView: 3,
+  gap: 20,
+  breakpoints: {
+    1280: {
+      perView: 3,
+    },
+    1024: {
+      perView: 2,
+    },
+    768: {
+      perView: 1,
+    }
+  }
+}
+
+const glideHero = {
+  type: 'carousel',
+  animationDuration: 2000,
+  autoplay: 4500,
+  focusAt: '1',
+  startAt: 2,
+  perView: 1, 
+};
+
+
+new Glide('.hero', glideHero).mount();
+new Glide('.glide', config).mount()
+  </script>
+</body>
+</html>

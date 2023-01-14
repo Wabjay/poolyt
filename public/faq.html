@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- Favicon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.jpg">
+     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.jpg">
+     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.jpg">
+    <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
+    
+<!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
+    <link rel="stylesheet" href="./output.css">
+    <title>Poolyt</title>
+</head>
+<style>
+    @media (max-width: 768px) {
+        .nav-links{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 55px; 
+            height: 100vh;
+            background-color: white;
+        }
+        #mobile-menu-2{
+            display: none;
+        }
+    }
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+    .hero__slide {
+  line-height: 100px;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  max-width: 542px;
+}
+
+    .glide__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    opacity: 1;
+    transform: translateY(-50%);
+}
+</style>
+<body class="bg-[#F5F5F5">
+    <header class=" w-full">
+        <nav class="bg-white py-4 block items-center h-[72px] lg:py-7 lg:h-[120px]">
+            <div class="flex flex-wrap place-self-center items-center justify-between  w-full lg:max-w-screen-xl px-4 lg:px-4 mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="./images/Logo_main 1.png"
+                        class="h-[40px] w-[74.92px] lg:h-[63px] lg:w-[118px] mr-3 sm:h-9" alt="Landwind Logo" />
+                </a>
+                <div class="flex items-center lg:order-2 lg:hidden">
+                     <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 border-0 lg:hidden 100 focus:outline-none "
+                        aria-controls="mobile-menu-2" aria-expanded="false"
+                        id="openNav">
+                        <span class="sr-only">Open main menu</span>
+                        <img src="./images/drop.png" alt="" class="w-[18px] h-[18px]">
+                    </button>
+                </div>
+                <div class="nav-links items-center justify-between z-20 w-full lg:flex lg:justify-end lg:w-auto lg:order-1"
+                    id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 bg-white">
+                        <li class="navBlock">
+                            <a href="index.html"
+                                class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                                aria-current="page" data-toggle="collapse">Home</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="index.html#aboutUs"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">About Us</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="index.html#howItWorks"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">How it Works</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="index.html#destination"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">Destination</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="index.html/#benefits"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">Benefits</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="index.html#testimonials"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">Testimonials</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="#"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">FAQ</a>
+                        </li>
+                        <li class="navBlock">
+                            <a href="#contact"
+                            class="block py-2 pl-3 pr-4 border-b  lg:px-0 lg:hover:text-[#FDDA0E] lg:pb-2 lg:border-transparent  lg:hover:border-[#FDDA0E]  lg:focus:border-[#FDDA0E]"
+                            aria-controls="mobile-menu-2" aria-expanded="false">Contact Us</a>
+                        </li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+     <!-- Start block -->
+     <section class="bg-white dark:bg-gray-900 lg:mt-[100px]">
+        <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 ">
+            <h2 class="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl dark:text-white">Frequently asked questions</h2>
+            <div class="max-w-screen-md mx-auto">
+                <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white text-gray-900" data-inactive-classes="text-grey-500 dark:text-gray-400">
+                    <h3 id="accordion-flush-heading-1">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1"  clip-rule="evenodd">
+                            <span>What is ridesharing?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Ridesharing occurs when there are more than one occupants in a private vehicle. Rather than travelling alone or with empty seats, drivers can connect with people travelling to same direction and share the travel cost on poolyt. These trips are made possible without the intention of making profit.</p>
+                           </div>
+                    </div>
+                    <h3 id="accordion-flush-heading-2">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                            <span>Do I need a car to rideshare?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">You don’t need to own a car to share a ride. You can find drivers who are happy to give you a lift in exchange for sharing the travel cost by <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgViWJuqoXHh09h306zTMRgjR2V4is3zUYAau5bN1ienNiRw/viewform?usp=sf_link">joining the poolyt community.</a></p>
+                        </div>
+                    </div>
+                    <h3 id="accordion-flush-heading-3">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                            <span>How safe is ridesharing?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">poolyt is built around safety and trust. While your location and destination is public, your contact information is only shared with members you have agreed to share a ride with.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">You however need to take responsibility for your personal safety while travelling. Below are some tips to keep you safe on the road:</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                                <li>Avoid exchanging home address with members you have not met in-person</li>
+                                <li>Arrange to join a ride from a public location</li>
+                                <li>Let your family and friend know your itinerary, including your rideshare partners</li>
+                                <li>Endeavor to verify IDs and vehicle details before boarding to be sure you are travelling with the right persons</li>
+                                <li>Never feel obligated to join a trip, especially when you have doubt about your travel rideshare partners.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3 id="accordion-flush-heading-4">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
+                            <span>What are the costs of ridesharing?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">On poolyt, the cost of ridesharing is called a contribution, and is a calculation based on amortized vehicle cost, amortized maintenance cost, fuel consumed per distance covered, any tolls paid on route, and a management fee to keep the service running. This is to ensure passenger cost offsets the real cost of travel with no profit making intention.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Contributions are fixed along the route and split equally for everyone riding with you. Though tipping is encouraged, never should you feel compelled to tip anyone you share a ride with.</p>
+                        </div>
+                    </div>
+
+                    <h3 id="accordion-flush-heading-5">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
+                            <span>Who are Poolytes?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+                        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Poolytes are verified and trusted members of poolyt’s community you will get to share a ride with. Members of the community keeps to the standards of being respectful, responsible, and reasonable.</p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Being respectful involves having proper etiquette and good communication. Poolyte’s endeavor to keep the vehicles neat and airy, never slam doors or rush, and communicating early enough when there are unavoidable delays.</p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Being responsible involves being reliable and keeping to time. Remembering that each person riding with you have his/her final destination and appointment schedule would prompt you to avoid their lateness because of you.</p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Being reasonable involves being flexible. You can be willing to delay a trip for a ride partner’s arrival as much as it would not affect your appointment. Consider indoor climate, perfumes and odors, including the aroma of food.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 id="accordion-flush-heading-6">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-6" aria-expanded="false" aria-controls="accordion-flush-body-6">
+                            <span>What are the benefits of ridesharing?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
+                        <div class="py-5 border-b border-gray-200">
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Poolytes enjoy reduced cost of travel, cuts congestion and pollution, reduced parking challenges, and opportunities to network and make new friends.</p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">You can enjoy ridesharing on poolyt during work trips, school trips, festivals, events, shows, shopping and on simple visits.</p>
+                        </div>
+                    </div>
+                    
+                    <h3 id="accordion-flush-heading-7">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-7" aria-expanded="false" aria-controls="accordion-flush-body-7">
+                            <span>Can persons below 18 use poolyt?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
+                        <div class="py-5 border-b border-gray-200">
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Poolytes are persons 18 years and above. However, persons below 18 years can share a ride on poolyt only if a Poolyte books a trip on their behalf. Endeavour to have required safety equipment for minors and juniors you booked for as the driver is only obligated to have a healthy vehicle with seat belt.</p>
+                        </div>
+                    </div>
+                     
+                    <h3 id="accordion-flush-heading-8">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-8" aria-expanded="false" aria-controls="accordion-flush-body-8">
+                            <span>How can I confirm a driver has valid permit to drive?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-8" class="hidden" aria-labelledby="accordion-flush-heading-8">
+                        <div class="py-5 border-b border-gray-200">
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Rest assured only drivers with valid drivers and vehicle licenses, insurance and roadworthiness certificates are allowed to share a ride on poolyt. For the benefit of doubt using the details provided about your matched driver, you can verify vehicle license <a href="verify.autoreg.ng">here</a>, insurance <a href="https://www.askniid.org/VerifyPolicy.aspx">here</a>, and road worthiness <a href="https://dvis.lg.gov.ng/verify/">here.</a></p>
+                        </div>
+                    </div>
+
+                    
+                    <h3 id="accordion-flush-heading-9">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-9" aria-expanded="false" aria-controls="accordion-flush-body-9">
+                            <span>How can I get involved?
+                            </span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-9" class="hidden" aria-labelledby="accordion-flush-heading-9">
+                        <div class="py-5 border-b border-gray-200">
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Poolyt is available for use by everyone 18 years and older, and can be used for trips to work, school, events, shows, shopping and more.</p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Your journey on poolyt starts with your registration to join our community of verified and trusted riders and drivers called Poolytes. You can register <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgViWJuqoXHh09h306zTMRgjR2V4is3zUYAau5bN1ienNiRw/viewform?usp=sf_link">here</a> for FREE</p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Once registered, you can schedule trips and meet with Poolytes closest to you that matches your departure time and route. To schedule a trip, click <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmTpFyGmHHcsGJ4DQuzpbu0mA2YZZLPVDu8KQDtUGQuCUUoA/viewform?usp=sf_link">here.</a></p>
+                        </div>
+                    </div>
+ 
+                    <h3 id="accordion-flush-heading-10">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-10" aria-expanded="false" aria-controls="accordion-flush-body-10">
+                            <span>Who has access to my personal contact details?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-10" class="hidden" aria-labelledby="accordion-flush-heading-10">
+                        <div class="py-5 border-b border-gray-200">
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Only the poolyt team and Poolytes you get matched with have access to your Name, Neighborhood, Destination, Phone Number and LinkedIn Profile. </p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Your residential address and email is visible to poolyt’s team only.</p>
+                        </div>
+                    </div>
+
+                     
+                    <h3 id="accordion-flush-heading-11">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-11" aria-expanded="false" aria-controls="accordion-flush-body-11">
+                            <span>How do I pay my contributions for a trip?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-11" class="hidden" aria-labelledby="accordion-flush-heading-11">
+                        <div class="py-5 border-b border-gray-200">
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Poolyt accepts bank and electronic transfers. Payment instructions will be provided in the emails notifying you of a match for your scheduled trips.</p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">You are expected to make successful payments before your scheduled trip can be confirmed as booked.</p>
+                        </div>
+                    </div>
+
+                       
+                    <h3 id="accordion-flush-heading-12">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-12" aria-expanded="false" aria-controls="accordion-flush-body-12">
+                            <span>Where should I meet my rideshare partner(s)?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-12" class="hidden" aria-labelledby="accordion-flush-heading-12">
+                        <div class="py-5 border-b border-gray-200">
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">We recommend you meet at public spaces, preferably close to major transport nodes such as bus stops and parks, so as to have a have easy access to alternate transport options should your rideshare partner fall through.</p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">For security reasons, refrain from sharing or meeting at your home address.</p>
+                        </div>
+                    </div>
+
+                    
+                    <h3 id="accordion-flush-heading-13">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-13" aria-expanded="false" aria-controls="accordion-flush-body-13">
+                            <span>What happens if I missed my scheduled trip?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-13" class="hidden" aria-labelledby="accordion-flush-heading-13">
+                        <div class="py-5 border-b border-gray-200">
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Poolyt is solely a ridesharing service and cannot be held liable for trips that do not work out as planned.</p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Poolytes are also not under any legal obligation to rideshare partners or poolyt to fulfil matched trips. However, matching priority is given to members with minimal or no history of cancellations. </p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Hence, Poolytes are expected to meet the community standard of being respectful, responsible, and reasonable, giving all affected parties early cancellation notice so as to allow for timely implementation of alternative plans.</p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">Paid contributions are refundable for missed trips, while management fees paid are not refundable.</p>
+                        </div>
+                    </div>
+                    
+                    <h3 id="accordion-flush-heading-13">
+                        <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-[#1A1A22] border-b border-gray-200" data-accordion-target="#accordion-flush-body-13" aria-expanded="false" aria-controls="accordion-flush-body-13">
+                            <span>How do I invite someone to join my trip?</span>
+                            <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </h3>
+                    <div id="accordion-flush-body-13" class="hidden" aria-labelledby="accordion-flush-heading-13">
+                        <div class="py-5 border-b border-gray-200">
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">For now, Poolyt only allows you to add minors (12 to 17 years old), juniors (2 to 11 years old) and infants (0 to 1-year old) as travel companions.</p>
+                            <p class="mb-3 text-gray-500 dark:text-gray-400">However, you can invite adults to poolyt and earn a bonus for each referral who makes a first trip on poolyt. Check your registration confirmation email for your referral ID and share the ID with your referral. Your referral must enter your referral during registration in the field provided to activate the bonus.</p>
+                        </div>
+                    </div>
+
+                </div> 
+            </div>               
+        </div>
+    </section>
+    <!-- End block -->
+
+  <!-- End block -->
+  <footer class="bg-white dark:bg-gray-800">
+    <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+        <div class="grid  gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div class=" md:order-first lg:max-w-fit">
+                <img src="./images/Logo_main 1.png" class="w-[87.27px] h-10 mb-6 lg:mb-8" alt="">
+                <ul class="">
+                    <li class="mb-4 lg:mb-6">
+                        <a mailto="info@poolyt.com" class="text-sm text-[#1A1A22] lg:text-lg font-medium hover:underline">info@poolyt.com</a>
+                    </li>
+                    <li class="mb-4 lg:mb-6">
+                        <a href="" class="text-sm text-[#1A1A22] lg:text-lg font-medium hover:underline">+2347036926299</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:order-3 lg:max-w-fit">
+                <h3 class="mb-8 lg:text-xl font-bold uppercase">Site map</h3>
+                <ul class="">
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">About Us</a>
+                    </li>
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">How it works</a>
+                    </li>
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">Destination</a>
+                    </li>
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">Benefits</a>
+                    </li>
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">Testimonials</a>
+                    </li>
+                    <li class="mb-3 lg:mb-4">
+                        <a href="" class="text-sm text-[#575757] lg:text-lg font-normal hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contact" class="md:order-last lg:max-w-[400px]">
+                <!-- <h3 class="mb-8 lg:text-xl font-bold uppercase">Request a call for you</h3> -->
+                <form class="w-full">
+                    <!-- <input class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[49px] lg:h-[52px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" id="username" type="text" placeholder="Name" />
+                    <input class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[49px] lg:h-[52px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" id="username" type="email" placeholder="Email" />
+                    <input class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[49px] lg:h-[52px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" id="username" type="tel" placeholder="Phone Number" />
+                    <textarea class="appearance-none block w-full bg-white text-[#575757] border-[1.5px] h-[150px] lg:h-[100px] rounded-[10px] py-3 px-4 mb-3 leading-tight focus:outline-[#F0EFEF] focus:bg-white" placeholder="Message"></textarea> -->
+                    
+                    <a href="https://wa.me/message/ZVDXUCRHIUKJN1 " class="w-full inline-flex items-center  justify-center w-full mb-6 px-5  bg-[#FDDA0E]  text-sm  text-white py-[18px]  px-2 rounded-[20px]" type="submit">
+                        Message poolyt on WhatsApp
+                    </a>
+                  </form>   
+            </div>
+            <div class="md:order-2 lg:max-w-fit">
+                <h3 class="hidden lg:block mb-8 lg:text-xl font-bold uppercase">Follow us on</h3>
+                <ul class="flex flex-row gap-x-4 w-max mx-auto">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline"><img src="./images/Facebook.svg" class="w-6 h-6 md:w-8 md:h-8 " alt=""></a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline"><img src="./images/Twitter.svg" class="w-6 h-6 md:w-8 md:h-8 " alt=""></a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline"><img src="./images/Instagram.svg" class="w-6 h-6 md:w-8 md:h-8 " alt=""></a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline"><img src="./images/LinkedIn.svg" class="w-6 h-6 md:w-8 md:h-8 " alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+        <div class="text-center">
+            <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2022 All rights reserved.<a href="https://flowbite.com"
+                    class="text-[#575757] hover:underline">Poolyt</a>
+            </span>
+        </div>
+    </div>
+</footer>
+
+<!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
+<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+<script src="./script.js"></script>
+<script>
+  const config = {
+  type: 'carousel',
+  startAt: 1,
+  perView: 3,
+  gap: 20,
+  breakpoints: {
+    1280: {
+      perView: 3,
+    },
+    1024: {
+      perView: 2,
+    },
+    768: {
+      perView: 1,
+    }
+  }
+}
+
+const glideHero = {
+  type: 'carousel',
+  animationDuration: 2000,
+  autoplay: 4500,
+  focusAt: '1',
+  startAt: 3,
+  perView: 1, 
+};
+
+
+new Glide('.hero', glideHero).mount();
+new Glide('.glide', config).mount()
+  </script>
+</body>
+</html>

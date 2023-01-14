@@ -1,0 +1,17 @@
+{
+  "name": "poolyt",
+  "version": "1.0.0",
+  "description": "Enjoy affordable, safe and sustainable ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0"
+  }
+}
