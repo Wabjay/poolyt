@@ -2,7 +2,7 @@
   "name": "poolyt",
   "version": "1.0.0",
   "description": "Enjoy affordable, safe and sustainable ",
-  "main": "index.js",
+  "main": "public/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

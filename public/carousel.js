@@ -9,15 +9,15 @@ class Carousel {
     this.carouselData = [
       {
         'id': '1',
-        'src': './images/Emmanuel.jpg',
+        'src': './public/images/Emmanuel.jpg',
       },
       {
         'id': '2',
-        'src': './images/Imoh.jpg',
+        'src': './public/images/Imoh.jpg',
       },
       {
         'id': '3',
-        'src': './images/Ruth.jpg',
+        'src': './public/images/Ruth.jpg',
       }
     ];
     this.carouselInView = [1, 2, 3];
