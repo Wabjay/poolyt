@@ -9,25 +9,21 @@ class Carousel {
     this.carouselData = [
       {
         'id': '1',
-        'src': './public/images/Emmanuel.jpg',
+        'src': './images/Emmanuel.jpg',
       },
       {
         'id': '2',
-        'src': './public/images/Imoh.jpg',
+        'src': './images/Imoh.jpg',
       },
       {
         'id': '3',
-        'src': './public/images/Ruth.jpg',
+        'src': './images/Ruth.jpg',
       }
     ];
     this.carouselInView = [1, 2, 3];
     this.carouselContainer;
     this.carouselPlayState;
-  };
-
-  sliderImage = document.querySelectorAll(".slides .slide > li");
-  sliderCarousel = document.querySelector('.carousel');
-  slides = document.querySelector('.slides');
+  }
 
   mounted() {
     this.setupCarousel();
@@ -37,7 +33,7 @@ class Carousel {
   setupCarousel() {
     const container = document.createElement('div');
     const controls = document.createElement('div');
-    // console.log(this.sliderImage.length)
+
     // Add container for carousel items and controls
     this.el.append(container, controls);
     container.className = 'carousel-container';
@@ -79,7 +75,6 @@ class Carousel {
 
     // Set container property
     this.carouselContainer = container;
-    this.play()
   }
 
   setControls(controls) {
@@ -94,13 +89,12 @@ class Carousel {
   }
 
   controlManager(control) {  
-    console.log(control )
     if (control === 'previous') return this.previous();
     if (control === 'next') return this.next();
     // if (control === 'add') return this.add();
     // if (control === 'new') 
     return this.play();
-   
+    console.log(play )
   
     return;
   };
@@ -115,7 +109,7 @@ class Carousel {
   // controPlay();
 
 
-  currentImg = 0;
+  
   previous() {
     // Update order of items in data array to be shown in carousel
     this.carouselData.unshift(this.carouselData.pop());
@@ -132,25 +126,7 @@ class Carousel {
     this.carouselData.slice(0, 5).forEach((data, index) => {
       document.querySelector(`.carousel-item-${index + 1}`).src = data.src;
     });
-   
-    // this.sliderImage[this.currentImg].classList.remove("active");
-    // this.currentImg--; 
-    // console.log(this.currentImg)
-    // if (this.currentImg < 0) {
-    //     this.currentImg = this.sliderImage.length - 1;
-    // }
-    // this.sliderImage[this.currentImg].classList.add("active");
-
-    this.sliderImage[this.currentImg].classList.remove("active");
-    this.currentImg--;
-  if(this.currentImg < 0) {
-    this.currentImg = this.slides.children.length - 1;
   }
-  this.slides.style.transform = `translateX(-${this.currentImg * 33.3}%)`;
-  // this.slides[this.currentImg].classList.add("active");
-  this.sliderImage[this.currentImg].classList.add("active");
-}
-  
 
   next() {
     // Update order of items in data array to be shown in carousel
@@ -168,22 +144,6 @@ class Carousel {
     this.carouselData.slice(0, 5).forEach((data, index) => {
       document.querySelector(`.carousel-item-${index + 1}`).src = data.src;
     });
-    
-    // this.sliderImage[this.currentImg].classList.remove("active");
-    // this.currentImg++; 
-    // console.log(this.currentImg)
-    // if (this.currentImg >= this.sliderImage.length) {
-    //   this.currentImg = 0;
-    // }
-    // this.sliderImage[this.currentImg].classList.add("active");
-
-    this.sliderImage[this.currentImg].classList.remove("active");
-    this.currentImg++;
-    if(this.currentImg === this.slides.children.length) {
-      this.currentImg = 0;
-    }
-    this.slides.style.transform = `translateX(-${this.currentImg * 33.3}%)`;
-    this.sliderImage[this.currentImg].classList.add("active");
   }
 
   add() {
@@ -229,7 +189,6 @@ class Carousel {
       this.carouselPlayState = setInterval(startPlaying, 1500);
     };
   }
- 
 
 }
 
