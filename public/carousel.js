@@ -226,7 +226,7 @@ class Carousel {
       this.next();
 
       // Use play state prop to store interval ID and run next method on a 1.5 second interval
-      this.carouselPlayState = setInterval(startPlaying, 1500);
+      this.carouselPlayState = setInterval(startPlaying, 5000);
     };
   }
  
